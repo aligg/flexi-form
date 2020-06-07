@@ -21,3 +21,7 @@ Example form with default example input:<br/>
 
 Example form with textarea input:<br/>
 ![Example form 2](textarea.png)<br/>
+
+## Run it:
+
+-   clone => yarn to install dependencies => yarn start
