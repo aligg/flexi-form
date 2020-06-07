@@ -13,3 +13,10 @@ Expects an array of objects, conditionally renders form
 -   Allow Form component to receive props for custom styling for form elements
 -   Modify renderJSX to check for tag type and add additional logic to handle select (assuming option fields passed in input data blob as well)
 -   Add additional field validation (more than just not empty) and leverage onBlur / onFocus to conditionally render a red border or add notes for the user re missing fields
+
+## Visuals:
+
+Example form with default example input
+![Example form 1](default.png)
+Example form with textarea input
+![Example form 2](textarea.png)
