@@ -52,3 +52,7 @@ label {
     font-weight: bold;
     padding-bottom: 3px;
 }
+
+textarea {
+    min-height: 100px;
+}

@@ -57,7 +57,11 @@ export const input1 = [
     },
 ];
 
-
-const input2 = {
-    
-}
+export const input2 = [
+    {
+        tag: "textarea",
+        name: "blog_text",
+        type: "text",
+        human_label: "Type your blog post",
+    },
+];

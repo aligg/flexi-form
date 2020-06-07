@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback } from "react";
-import { input1 } from "../sampleFormInputs";
+import { input2 } from "../sampleFormInputs";
 
 const Form = () => {
     const [formData, setFormData] = useState([]);
@@ -18,7 +18,7 @@ const Form = () => {
 
     // on page load, fetch and store form data, initialize form state
     useEffect(() => {
-        setFormData(input1);
+        setFormData(input2);
         constructState();
     }, [constructState]);
 
@@ -43,6 +43,7 @@ const Form = () => {
     const renderForm = () => {
         const formJSX = [];
         formData.map((obj) => {
+            const CustomTag = `${obj.tag}`;
             if (
                 !obj.conditional ||
                 (obj.conditional &&
@@ -61,12 +62,12 @@ const Form = () => {
                         }
                     >
                         <label>{obj.human_label}</label>
-                        <input
+                        <CustomTag
                             type={obj.type}
                             name={obj.name}
                             onChange={handleOnChange}
                             value={formState.name}
-                        ></input>
+                        ></CustomTag>
                     </div>,
                 );
             }
