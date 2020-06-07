@@ -44,6 +44,7 @@ const Form = () => {
         const formJSX = [];
         formData.map((obj) => {
             const CustomTag = `${obj.tag}`;
+            // if field is not conditional *or* conditions met, add to jsx
             if (
                 !obj.conditional ||
                 (obj.conditional &&
@@ -79,6 +80,7 @@ const Form = () => {
         alert(`Submit success: " ${JSON.stringify(formState, null, 4)}`);
     };
 
+    // if any null keys, do not allow submit
     const submissionDisabled = () => {
         let nullFieldValue = false;
         if (formState) {
@@ -89,7 +91,6 @@ const Form = () => {
                 }
             });
         }
-
         return nullFieldValue;
     };
 
