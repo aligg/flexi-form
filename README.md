@@ -16,8 +16,8 @@ Expects an array of objects, conditionally renders form
 
 ## Visuals:
 
-Example form with default example input<br/>
+Example form with default example input:<br/>
 ![Example form 1](default.png)<br/>
 
-Example form with textarea input<br/>
+Example form with textarea input:<br/>
 ![Example form 2](textarea.png)<br/>
