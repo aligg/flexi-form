@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback } from "react";
-import { input2 } from "../sampleFormInputs";
+import { input1 } from "../sampleFormInputs";
 
 const Form = () => {
     const [formData, setFormData] = useState([]);
@@ -18,7 +18,7 @@ const Form = () => {
 
     // on page load, fetch and store form data, initialize form state
     useEffect(() => {
-        setFormData(input2);
+        setFormData(input1);
         constructState();
     }, [constructState]);
 
